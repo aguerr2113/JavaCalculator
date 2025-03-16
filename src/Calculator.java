@@ -2,20 +2,21 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        int operator, n1, n2;
-        System.out.println("1 - Add \n 2 - Subtract \n 3 - Multiply \n 4 - Divide");
+        int operator; 
+        double n1, n2;
+        System.out.println(" 1 - Add \n 2 - Subtract \n 3 - Multiply \n 4 - Divide");
 
         System.out.println("Choose Operator: ");
         Scanner sc = new Scanner(System.in);
         operator = sc.nextInt();
 
         System.out.print("Enter first number : ");
-        n1 = sc.nextInt();
+        n1 = sc.nextDouble();
 
         System.out.print("Enter Second number : ");
-        n2 = sc.nextInt();
+        n2 = sc.nextDouble();
 
-        int result = 0;
+        double result = 0;
 
         switch (operator) {
         case 1:
